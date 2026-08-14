@@ -1,0 +1,1159 @@
+{
+  "$description": "Machine-readable index of every Acxiom brand asset in this repository. Regenerate with: python3 design-system/scripts/build-manifest.py",
+  "$version": "1.0.0",
+  "source": {
+    "masterTemplate": "reference/AcxiomMasterTemplate_2026.pdf",
+    "valueDeck": "reference/AcxiomValueDeck_2026.pdf",
+    "templateVersion": "1.0",
+    "templateDate": "2026-01"
+  },
+  "tokens": {
+    "json": "design-system/tokens/tokens.json",
+    "css": "design-system/tokens/tokens.css",
+    "scss": "design-system/tokens/tokens.scss",
+    "tailwind": "design-system/tokens/tailwind.preset.js"
+  },
+  "logo": {
+    "aspectRatio": "802.22 / 124.81",
+    "rules": [
+      "Appears in the slide footer only.",
+      "Never recolor: black or white only.",
+      "Never stretch, rotate, box, or add effects.",
+      "If the glow passes over the logo, paste the logo on top so it stays legible.",
+      "Client logos never go in the footer, only on cover slides."
+    ],
+    "files": [
+      {
+        "path": "assets/logo/svg/acxiom-logo-black.svg",
+        "variant": "black",
+        "format": "svg",
+        "useOn": "Light surfaces: bone, white.",
+        "note": "Preferred for web and any scaled use."
+      },
+      {
+        "path": "assets/logo/png/acxiom-logo-black.png",
+        "width": 3344,
+        "height": 521,
+        "variant": "black",
+        "format": "png",
+        "useOn": "Light surfaces: bone, white.",
+        "note": "Raster, transparent background."
+      },
+      {
+        "path": "assets/logo/eps/acxiom-logo-black.eps",
+        "width": 803,
+        "height": 125,
+        "variant": "black",
+        "format": "eps",
+        "useOn": "Light surfaces: bone, white.",
+        "note": "Print and vendor handoff."
+      },
+      {
+        "path": "assets/logo/svg/acxiom-logo-white.svg",
+        "variant": "white",
+        "format": "svg",
+        "useOn": "Dark surfaces: black, plum, imagery, the glow.",
+        "note": "Preferred for web and any scaled use."
+      },
+      {
+        "path": "assets/logo/png/acxiom-logo-white.png",
+        "width": 3344,
+        "height": 521,
+        "variant": "white",
+        "format": "png",
+        "useOn": "Dark surfaces: black, plum, imagery, the glow.",
+        "note": "Raster, transparent background."
+      },
+      {
+        "path": "assets/logo/eps/acxiom-logo-white.eps",
+        "variant": "white",
+        "format": "eps",
+        "useOn": "Dark surfaces: black, plum, imagery, the glow.",
+        "note": "Print and vendor handoff."
+      }
+    ]
+  },
+  "icons": {
+    "style": "Dotted line \u2014 forms drawn from dot fields rather than solid strokes.",
+    "size": {
+      "width": 285,
+      "height": 285,
+      "format": "PNG",
+      "alpha": true
+    },
+    "usage": "Black on light surfaces, white on dark. ~48pt placed on a slide; bullets ~20pt.",
+    "categories": [
+      "commerce",
+      "communication",
+      "data",
+      "device",
+      "industry",
+      "marketing",
+      "media",
+      "people",
+      "security",
+      "symbol",
+      "technology",
+      "ui"
+    ],
+    "dotted": [
+      {
+        "name": "ai",
+        "label": "AI",
+        "category": "technology",
+        "aliases": [
+          "artificial intelligence",
+          "machine learning"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/ai.png",
+          "white": "assets/icons/dotted/white/ai.png"
+        }
+      },
+      {
+        "name": "analytics",
+        "label": "Analytics",
+        "category": "data",
+        "aliases": [
+          "chart",
+          "insights",
+          "measurement"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/analytics.png",
+          "white": "assets/icons/dotted/white/analytics.png"
+        }
+      },
+      {
+        "name": "automotive",
+        "label": "Automotive",
+        "category": "industry",
+        "aliases": [
+          "car",
+          "vehicle",
+          "auto"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/automotive.png",
+          "white": "assets/icons/dotted/white/automotive.png"
+        }
+      },
+      {
+        "name": "banking",
+        "label": "Banking",
+        "category": "industry",
+        "aliases": [
+          "bank",
+          "finance",
+          "financial services"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/banking.png",
+          "white": "assets/icons/dotted/white/banking.png"
+        }
+      },
+      {
+        "name": "bot-ai",
+        "label": "Bot/AI",
+        "category": "technology",
+        "aliases": [
+          "chatbot",
+          "robot",
+          "assistant"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/bot-ai.png",
+          "white": "assets/icons/dotted/white/bot-ai.png"
+        }
+      },
+      {
+        "name": "calendar",
+        "label": "Calendar",
+        "category": "ui",
+        "aliases": [
+          "date",
+          "schedule",
+          "event"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/calendar.png",
+          "white": "assets/icons/dotted/white/calendar.png"
+        }
+      },
+      {
+        "name": "chat-message",
+        "label": "Chat/Message",
+        "category": "communication",
+        "aliases": [
+          "sms",
+          "text",
+          "conversation"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/chat-message.png",
+          "white": "assets/icons/dotted/white/chat-message.png"
+        }
+      },
+      {
+        "name": "checkmark",
+        "label": "Check",
+        "category": "symbol",
+        "aliases": [
+          "tick",
+          "done",
+          "complete",
+          "confirm"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/checkmark.png",
+          "white": "assets/icons/dotted/white/checkmark.png"
+        }
+      },
+      {
+        "name": "churn",
+        "label": "Churn",
+        "category": "data",
+        "aliases": [
+          "attrition",
+          "retention",
+          "loss"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/churn.png",
+          "white": "assets/icons/dotted/white/churn.png"
+        }
+      },
+      {
+        "name": "clean-room",
+        "label": "Clean room",
+        "category": "data",
+        "aliases": [
+          "data clean room",
+          "secure",
+          "collaboration"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/clean-room.png",
+          "white": "assets/icons/dotted/white/clean-room.png"
+        }
+      },
+      {
+        "name": "clock",
+        "label": "Clock",
+        "category": "ui",
+        "aliases": [
+          "time",
+          "duration",
+          "speed"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/clock.png",
+          "white": "assets/icons/dotted/white/clock.png"
+        }
+      },
+      {
+        "name": "cloud",
+        "label": "Cloud",
+        "category": "technology",
+        "aliases": [
+          "saas",
+          "hosting",
+          "infrastructure"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/cloud.png",
+          "white": "assets/icons/dotted/white/cloud.png"
+        }
+      },
+      {
+        "name": "connected-tv",
+        "label": "Connected TV",
+        "category": "media",
+        "aliases": [
+          "ctv",
+          "ott",
+          "streaming",
+          "television"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/connected-tv.png",
+          "white": "assets/icons/dotted/white/connected-tv.png"
+        }
+      },
+      {
+        "name": "cpg",
+        "label": "CPG",
+        "category": "industry",
+        "aliases": [
+          "consumer packaged goods",
+          "fmcg"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/cpg.png",
+          "white": "assets/icons/dotted/white/cpg.png"
+        }
+      },
+      {
+        "name": "credit-cards",
+        "label": "Credit cards",
+        "category": "commerce",
+        "aliases": [
+          "payment",
+          "card",
+          "checkout"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/credit-cards.png",
+          "white": "assets/icons/dotted/white/credit-cards.png"
+        }
+      },
+      {
+        "name": "customer",
+        "label": "Customer",
+        "category": "people",
+        "aliases": [
+          "person",
+          "user",
+          "consumer",
+          "profile"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/customer.png",
+          "white": "assets/icons/dotted/white/customer.png"
+        }
+      },
+      {
+        "name": "data",
+        "label": "Data",
+        "category": "data",
+        "aliases": [
+          "database",
+          "records",
+          "storage"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/data.png",
+          "white": "assets/icons/dotted/white/data.png"
+        }
+      },
+      {
+        "name": "data-file",
+        "label": "Data file",
+        "category": "data",
+        "aliases": [
+          "dataset",
+          "file",
+          "export"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/data-file.png",
+          "white": "assets/icons/dotted/white/data-file.png"
+        }
+      },
+      {
+        "name": "direct-mail",
+        "label": "Direct mail",
+        "category": "communication",
+        "aliases": [
+          "postal",
+          "print",
+          "letter"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/direct-mail.png",
+          "white": "assets/icons/dotted/white/direct-mail.png"
+        }
+      },
+      {
+        "name": "directional",
+        "label": "Directional",
+        "category": "symbol",
+        "aliases": [
+          "arrow",
+          "direction",
+          "pointer"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/directional.png",
+          "white": "assets/icons/dotted/white/directional.png"
+        }
+      },
+      {
+        "name": "document",
+        "label": "Document",
+        "category": "ui",
+        "aliases": [
+          "page",
+          "report",
+          "paper"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/document.png",
+          "white": "assets/icons/dotted/white/document.png"
+        }
+      },
+      {
+        "name": "equal",
+        "label": "Equal",
+        "category": "symbol",
+        "aliases": [
+          "equals",
+          "parity",
+          "same"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/equal.png",
+          "white": "assets/icons/dotted/white/equal.png"
+        }
+      },
+      {
+        "name": "growth",
+        "label": "Growth",
+        "category": "data",
+        "aliases": [
+          "increase",
+          "trend up",
+          "scale"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/growth.png",
+          "white": "assets/icons/dotted/white/growth.png"
+        }
+      },
+      {
+        "name": "headphones",
+        "label": "Headphones",
+        "category": "media",
+        "aliases": [
+          "audio",
+          "listen",
+          "support"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/headphones.png",
+          "white": "assets/icons/dotted/white/headphones.png"
+        }
+      },
+      {
+        "name": "health",
+        "label": "Health",
+        "category": "industry",
+        "aliases": [
+          "healthcare",
+          "medical",
+          "pharma"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/health.png",
+          "white": "assets/icons/dotted/white/health.png"
+        }
+      },
+      {
+        "name": "heart",
+        "label": "Heart",
+        "category": "symbol",
+        "aliases": [
+          "love",
+          "favorite",
+          "loyalty"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/heart.png",
+          "white": "assets/icons/dotted/white/heart.png"
+        }
+      },
+      {
+        "name": "household",
+        "label": "Household",
+        "category": "people",
+        "aliases": [
+          "home",
+          "family",
+          "residence"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/household.png",
+          "white": "assets/icons/dotted/white/household.png"
+        }
+      },
+      {
+        "name": "key",
+        "label": "Key",
+        "category": "security",
+        "aliases": [
+          "access",
+          "unlock",
+          "credential"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/key.png",
+          "white": "assets/icons/dotted/white/key.png"
+        }
+      },
+      {
+        "name": "landline",
+        "label": "Landline",
+        "category": "communication",
+        "aliases": [
+          "phone",
+          "telephone",
+          "call"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/landline.png",
+          "white": "assets/icons/dotted/white/landline.png"
+        }
+      },
+      {
+        "name": "laptop",
+        "label": "Laptop",
+        "category": "device",
+        "aliases": [
+          "computer",
+          "desktop",
+          "web"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/laptop.png",
+          "white": "assets/icons/dotted/white/laptop.png"
+        }
+      },
+      {
+        "name": "legal",
+        "label": "Legal",
+        "category": "industry",
+        "aliases": [
+          "law",
+          "compliance",
+          "regulation"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/legal.png",
+          "white": "assets/icons/dotted/white/legal.png"
+        }
+      },
+      {
+        "name": "location",
+        "label": "Location",
+        "category": "ui",
+        "aliases": [
+          "pin",
+          "map",
+          "geo",
+          "place"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/location.png",
+          "white": "assets/icons/dotted/white/location.png"
+        }
+      },
+      {
+        "name": "lock",
+        "label": "Lock",
+        "category": "security",
+        "aliases": [
+          "privacy",
+          "secure",
+          "protected"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/lock.png",
+          "white": "assets/icons/dotted/white/lock.png"
+        }
+      },
+      {
+        "name": "mail",
+        "label": "Mail",
+        "category": "communication",
+        "aliases": [
+          "email",
+          "envelope",
+          "message"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/mail.png",
+          "white": "assets/icons/dotted/white/mail.png"
+        }
+      },
+      {
+        "name": "manufacturing",
+        "label": "Manufacturing",
+        "category": "industry",
+        "aliases": [
+          "factory",
+          "production",
+          "industrial"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/manufacturing.png",
+          "white": "assets/icons/dotted/white/manufacturing.png"
+        }
+      },
+      {
+        "name": "manufacturing-2",
+        "label": "Manufacturing 2",
+        "category": "industry",
+        "aliases": [
+          "factory",
+          "production",
+          "alternate"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/manufacturing-2.png",
+          "white": "assets/icons/dotted/white/manufacturing-2.png"
+        }
+      },
+      {
+        "name": "megaphone",
+        "label": "Megaphone",
+        "category": "marketing",
+        "aliases": [
+          "announce",
+          "advertising",
+          "promotion"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/megaphone.png",
+          "white": "assets/icons/dotted/white/megaphone.png"
+        }
+      },
+      {
+        "name": "money",
+        "label": "Money",
+        "category": "commerce",
+        "aliases": [
+          "cash",
+          "revenue",
+          "budget",
+          "cost"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/money.png",
+          "white": "assets/icons/dotted/white/money.png"
+        }
+      },
+      {
+        "name": "music",
+        "label": "Music",
+        "category": "media",
+        "aliases": [
+          "audio",
+          "streaming",
+          "entertainment"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/music.png",
+          "white": "assets/icons/dotted/white/music.png"
+        }
+      },
+      {
+        "name": "no-symbol",
+        "label": "No symbol",
+        "category": "symbol",
+        "aliases": [
+          "prohibited",
+          "blocked",
+          "not allowed"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/no-symbol.png",
+          "white": "assets/icons/dotted/white/no-symbol.png"
+        }
+      },
+      {
+        "name": "privacy",
+        "label": "Privacy",
+        "category": "security",
+        "aliases": [
+          "consent",
+          "shield",
+          "protection"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/privacy.png",
+          "white": "assets/icons/dotted/white/privacy.png"
+        }
+      },
+      {
+        "name": "question-mark",
+        "label": "Question mark",
+        "category": "symbol",
+        "aliases": [
+          "help",
+          "unknown",
+          "faq"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/question-mark.png",
+          "white": "assets/icons/dotted/white/question-mark.png"
+        }
+      },
+      {
+        "name": "quote-mark",
+        "label": "Quote mark",
+        "category": "symbol",
+        "aliases": [
+          "testimonial",
+          "citation",
+          "quotation"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/quote-mark.png",
+          "white": "assets/icons/dotted/white/quote-mark.png"
+        }
+      },
+      {
+        "name": "restaurant",
+        "label": "Restaurant",
+        "category": "industry",
+        "aliases": [
+          "dining",
+          "food service",
+          "qsr"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/restaurant.png",
+          "white": "assets/icons/dotted/white/restaurant.png"
+        }
+      },
+      {
+        "name": "revenue",
+        "label": "Revenue",
+        "category": "data",
+        "aliases": [
+          "sales",
+          "income",
+          "earnings"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/revenue.png",
+          "white": "assets/icons/dotted/white/revenue.png"
+        }
+      },
+      {
+        "name": "reverse-arrows",
+        "label": "Reverse arrows",
+        "category": "symbol",
+        "aliases": [
+          "exchange",
+          "sync",
+          "two-way",
+          "swap"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/reverse-arrows.png",
+          "white": "assets/icons/dotted/white/reverse-arrows.png"
+        }
+      },
+      {
+        "name": "search",
+        "label": "Search",
+        "category": "ui",
+        "aliases": [
+          "find",
+          "magnifier",
+          "discovery"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/search.png",
+          "white": "assets/icons/dotted/white/search.png"
+        }
+      },
+      {
+        "name": "service",
+        "label": "Service",
+        "category": "people",
+        "aliases": [
+          "support",
+          "customer service",
+          "help desk"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/service.png",
+          "white": "assets/icons/dotted/white/service.png"
+        }
+      },
+      {
+        "name": "shopping-bag",
+        "label": "Retail",
+        "category": "commerce",
+        "aliases": [
+          "shopping bag",
+          "purse",
+          "store",
+          "purchase"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/shopping-bag.png",
+          "white": "assets/icons/dotted/white/shopping-bag.png"
+        }
+      },
+      {
+        "name": "shopping-cart",
+        "label": "Shopping cart",
+        "category": "commerce",
+        "aliases": [
+          "ecommerce",
+          "basket",
+          "checkout"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/shopping-cart.png",
+          "white": "assets/icons/dotted/white/shopping-cart.png"
+        }
+      },
+      {
+        "name": "smartphone",
+        "label": "Smartphone",
+        "category": "device",
+        "aliases": [
+          "mobile",
+          "phone",
+          "app"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/smartphone.png",
+          "white": "assets/icons/dotted/white/smartphone.png"
+        }
+      },
+      {
+        "name": "speech-bubble",
+        "label": "Speech bubble",
+        "category": "communication",
+        "aliases": [
+          "comment",
+          "feedback",
+          "dialogue"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/speech-bubble.png",
+          "white": "assets/icons/dotted/white/speech-bubble.png"
+        }
+      },
+      {
+        "name": "storefront",
+        "label": "Storefront",
+        "category": "commerce",
+        "aliases": [
+          "shop",
+          "retail location",
+          "brick and mortar"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/storefront.png",
+          "white": "assets/icons/dotted/white/storefront.png"
+        }
+      },
+      {
+        "name": "telco",
+        "label": "Telco",
+        "category": "industry",
+        "aliases": [
+          "telecom",
+          "telecommunications",
+          "carrier"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/telco.png",
+          "white": "assets/icons/dotted/white/telco.png"
+        }
+      },
+      {
+        "name": "thumbs-up",
+        "label": "Thumbs up",
+        "category": "symbol",
+        "aliases": [
+          "approve",
+          "like",
+          "positive"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/thumbs-up.png",
+          "white": "assets/icons/dotted/white/thumbs-up.png"
+        }
+      },
+      {
+        "name": "travel",
+        "label": "Travel",
+        "category": "industry",
+        "aliases": [
+          "airline",
+          "trip",
+          "tourism",
+          "hospitality"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/travel.png",
+          "white": "assets/icons/dotted/white/travel.png"
+        }
+      },
+      {
+        "name": "trophy",
+        "label": "Trophy",
+        "category": "symbol",
+        "aliases": [
+          "award",
+          "win",
+          "achievement",
+          "best"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/trophy.png",
+          "white": "assets/icons/dotted/white/trophy.png"
+        }
+      },
+      {
+        "name": "versus",
+        "label": "Versus",
+        "category": "symbol",
+        "aliases": [
+          "vs",
+          "compare",
+          "comparison"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/versus.png",
+          "white": "assets/icons/dotted/white/versus.png"
+        }
+      },
+      {
+        "name": "x-symbol",
+        "label": "X symbol",
+        "category": "symbol",
+        "aliases": [
+          "close",
+          "cancel",
+          "cross",
+          "remove"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/x-symbol.png",
+          "white": "assets/icons/dotted/white/x-symbol.png"
+        }
+      },
+      {
+        "name": "yes-symbol",
+        "label": "Yes symbol",
+        "category": "symbol",
+        "aliases": [
+          "affirmative",
+          "agree",
+          "positive"
+        ],
+        "variants": {
+          "black": "assets/icons/dotted/black/yes-symbol.png",
+          "white": "assets/icons/dotted/white/yes-symbol.png"
+        }
+      }
+    ],
+    "bullets": [
+      {
+        "name": "bullet-01",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-01.png",
+          "white": "assets/icons/bullets/white/bullet-01.png"
+        }
+      },
+      {
+        "name": "bullet-02",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-02.png",
+          "white": "assets/icons/bullets/white/bullet-02.png"
+        }
+      },
+      {
+        "name": "bullet-03",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-03.png",
+          "white": "assets/icons/bullets/white/bullet-03.png"
+        }
+      },
+      {
+        "name": "bullet-04",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-04.png",
+          "white": "assets/icons/bullets/white/bullet-04.png"
+        }
+      },
+      {
+        "name": "bullet-05",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-05.png",
+          "white": "assets/icons/bullets/white/bullet-05.png"
+        }
+      },
+      {
+        "name": "bullet-06",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-06.png",
+          "white": "assets/icons/bullets/white/bullet-06.png"
+        }
+      },
+      {
+        "name": "bullet-07",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-07.png",
+          "white": "assets/icons/bullets/white/bullet-07.png"
+        }
+      },
+      {
+        "name": "bullet-08",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-08.png",
+          "white": "assets/icons/bullets/white/bullet-08.png"
+        }
+      },
+      {
+        "name": "bullet-09",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-09.png",
+          "white": "assets/icons/bullets/white/bullet-09.png"
+        }
+      },
+      {
+        "name": "bullet-10",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-10.png",
+          "white": "assets/icons/bullets/white/bullet-10.png"
+        }
+      },
+      {
+        "name": "bullet-11",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-11.png",
+          "white": "assets/icons/bullets/white/bullet-11.png"
+        }
+      },
+      {
+        "name": "bullet-12",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-12.png",
+          "white": "assets/icons/bullets/white/bullet-12.png"
+        }
+      },
+      {
+        "name": "bullet-13",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-13.png",
+          "white": "assets/icons/bullets/white/bullet-13.png"
+        }
+      },
+      {
+        "name": "bullet-14",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-14.png",
+          "white": "assets/icons/bullets/white/bullet-14.png"
+        }
+      },
+      {
+        "name": "bullet-15",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-15.png",
+          "white": "assets/icons/bullets/white/bullet-15.png"
+        }
+      },
+      {
+        "name": "bullet-16",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-16.png",
+          "white": "assets/icons/bullets/white/bullet-16.png"
+        }
+      },
+      {
+        "name": "bullet-17",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-17.png",
+          "white": "assets/icons/bullets/white/bullet-17.png"
+        }
+      },
+      {
+        "name": "bullet-18",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-18.png",
+          "white": "assets/icons/bullets/white/bullet-18.png"
+        }
+      },
+      {
+        "name": "bullet-19",
+        "variants": {
+          "black": "assets/icons/bullets/black/bullet-19.png",
+          "white": "assets/icons/bullets/white/bullet-19.png"
+        }
+      }
+    ]
+  },
+  "backgrounds": {
+    "teams": {
+      "note": "Microsoft Teams video backgrounds.",
+      "files": [
+        {
+          "path": "assets/backgrounds/teams/acxiom-teams-bg-01.png",
+          "width": 8001,
+          "height": 4501
+        },
+        {
+          "path": "assets/backgrounds/teams/acxiom-teams-bg-02.png",
+          "width": 8001,
+          "height": 4500
+        },
+        {
+          "path": "assets/backgrounds/teams/acxiom-teams-bg-03.png",
+          "width": 8001,
+          "height": 4501
+        },
+        {
+          "path": "assets/backgrounds/teams/acxiom-teams-bg-04.png",
+          "width": 8001,
+          "height": 4501
+        },
+        {
+          "path": "assets/backgrounds/teams/acxiom-teams-bg-office.jpg",
+          "width": 4000,
+          "height": 2251
+        }
+      ]
+    },
+    "desktop": {
+      "note": "4K desktop wallpapers.",
+      "files": [
+        {
+          "path": "assets/backgrounds/desktop/acxiom-desktop-01.jpg",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "assets/backgrounds/desktop/acxiom-desktop-02.jpg",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "assets/backgrounds/desktop/acxiom-desktop-03.jpg",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "path": "assets/backgrounds/desktop/acxiom-desktop-04.jpg",
+          "width": 3840,
+          "height": 2160
+        }
+      ]
+    }
+  },
+  "reference": [
+    {
+      "path": "reference/AcxiomMasterTemplate_2026.pdf",
+      "title": "Acxiom Master Template 2026, v1.0",
+      "pages": 21,
+      "note": "The authoritative source for this design system: dos and don'ts, icon inventory, flow-chart and chart styling, photo glow, footer anatomy."
+    },
+    {
+      "path": "reference/AcxiomValueDeck_2026.pdf",
+      "title": "Acxiom Value Deck 2026",
+      "pages": 95,
+      "note": "The template applied at length. Use it to see the system in practice."
+    }
+  ],
+  "contact": {
+    "brand": "acxiombrand@acxiom.com"
+  }
+}

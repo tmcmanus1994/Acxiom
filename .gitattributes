@@ -1,0 +1,17 @@
+# Brand assets are binary — never diff or auto-convert line endings.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.eps   binary
+*.pdf   binary
+
+# SVG is text, but treat it as an asset in diffs rather than source.
+*.svg   text eol=lf linguist-vendored
+
+*.md    text eol=lf
+*.json  text eol=lf
+*.css   text eol=lf
+*.scss  text eol=lf
+*.js    text eol=lf
+*.html  text eol=lf
+*.py    text eol=lf

@@ -1,0 +1,191 @@
+/* ============================================================
+   Acxiom Design Tokens — CSS custom properties
+   Source: AcxiomMasterTemplate_2026.pdf (v1.0, January 2026)
+   Generated companion to design-system/tokens/tokens.json
+
+   Sizes below are given in px. The native brand canvas is a
+   960x540pt slide, so 1pt maps to 1px in a 960x540 web frame.
+   ============================================================ */
+
+:root {
+  /* --- Core ------------------------------------------------ */
+  --acx-black: #000000;
+  --acx-bone: #EDECE8;
+  --acx-white: #FFFFFF;
+  --acx-plum: #2A182E;
+
+  /* --- Accent (never for body text) ------------------------ */
+  --acx-magenta: #FF00A9;
+  --acx-blue: #1A12F7;
+  --acx-orange: #FF672D;
+
+  /* --- Neutral --------------------------------------------- */
+  --acx-grey: #C6C6C3;
+  --acx-grey-dark: #A0A0A0;
+  --acx-bone-shade: #D8D6D0;
+
+  /* --- Gradient stops -------------------------------------- */
+  --acx-cyan: #00E1FD;
+  --acx-violet: #940BE0;
+
+  /* --- Semantic surfaces ----------------------------------- */
+  --acx-surface-dark: var(--acx-black);
+  --acx-surface-dark-alt: var(--acx-plum);
+  --acx-surface-light: var(--acx-bone);
+  --acx-surface-light-alt: var(--acx-white);
+
+  /* --- Semantic text --------------------------------------- */
+  --acx-text-on-light: var(--acx-black);
+  --acx-text-on-light-muted: var(--acx-grey-dark);
+  --acx-text-on-dark: var(--acx-white);
+  --acx-text-on-dark-display: var(--acx-bone);
+
+  /* --- Chart series (in order) ----------------------------- */
+  --acx-chart-1: var(--acx-blue);
+  --acx-chart-2: var(--acx-magenta);
+  --acx-chart-3: var(--acx-plum);
+  --acx-chart-4: var(--acx-grey);
+
+  /* --- Gradients ------------------------------------------- */
+  --acx-gradient-glow: linear-gradient(75deg, #000000 0%, #2A182E 35%, #940BE0 70%, #FF00A9 100%);
+  --acx-gradient-cyan-magenta: linear-gradient(180deg, #00E1FD 0%, #FF00A9 100%);
+  --acx-gradient-magenta-violet: linear-gradient(180deg, #FF00A9 0%, #940BE0 100%);
+  --acx-gradient-orange-violet: linear-gradient(180deg, #FF672D 0%, #940BE0 100%);
+
+  /* --- Type families --------------------------------------- */
+  --acx-font-display: "Tw Cen MT", "Twentieth Century", Futura, "Century Gothic", Questrial, sans-serif;
+  --acx-font-mono: Consolas, "Cascadia Mono", "SF Mono", Menlo, monospace;
+
+  /* --- Type sizes ------------------------------------------ */
+  --acx-size-display: 72px;
+  --acx-size-title: 32px;
+  --acx-size-heading: 28px;
+  --acx-size-lead: 16px;
+  --acx-size-body: 14px;
+  --acx-size-body-sm: 12px;
+  --acx-size-caption: 10px;
+  --acx-size-eyebrow: 11px;
+  --acx-size-label: 8px;
+  --acx-size-footer: 10px;
+
+  /* --- Tracking -------------------------------------------- */
+  --acx-tracking-none: 0em;
+  --acx-tracking-caption: 0.05em;
+  --acx-tracking-footer: 0.15em;
+  --acx-tracking-eyebrow: 0.25em;
+  --acx-tracking-label: 0.35em;
+
+  /* --- Line heights ---------------------------------------- */
+  --acx-leading-display: 1.05;
+  --acx-leading-heading: 1.1;
+  --acx-leading-body: 1.45;
+  --acx-leading-lead: 1.5;
+
+  /* --- Layout ---------------------------------------------- */
+  --acx-canvas-width: 960px;
+  --acx-canvas-height: 540px;
+  --acx-margin: 28.8px;
+  --acx-headline-offset-top: 19.2px;
+  --acx-footer-offset-bottom: 24px;
+
+  /* --- Space (4px base) ------------------------------------ */
+  --acx-space-1: 4px;
+  --acx-space-2: 8px;
+  --acx-space-3: 12px;
+  --acx-space-4: 16px;
+  --acx-space-5: 24px;
+  --acx-space-6: 28.8px;
+  --acx-space-7: 32px;
+  --acx-space-8: 48px;
+  --acx-space-9: 64px;
+
+  /* --- Borders --------------------------------------------- */
+  --acx-border-hairline: 0.75px;
+  --acx-border-default: 1px;
+  --acx-border-thick: 2px;
+  --acx-radius-none: 0;
+  --acx-radius-pill: 999px;
+}
+
+/* ============================================================
+   Ready-made type classes
+   ============================================================ */
+
+.acx-display {
+  font-family: var(--acx-font-display);
+  font-size: var(--acx-size-display);
+  font-weight: 400;
+  line-height: var(--acx-leading-display);
+}
+
+.acx-heading {
+  font-family: var(--acx-font-display);
+  font-size: var(--acx-size-heading);
+  font-weight: 400;
+  line-height: var(--acx-leading-heading);
+}
+
+.acx-lead {
+  font-family: var(--acx-font-display);
+  font-size: var(--acx-size-lead);
+  font-weight: 400;
+  line-height: var(--acx-leading-lead);
+}
+
+.acx-body {
+  font-family: var(--acx-font-display);
+  font-size: var(--acx-size-body);
+  font-weight: 400;
+  line-height: var(--acx-leading-body);
+}
+
+/* The signature kicker. Consolas is always uppercase. */
+.acx-eyebrow {
+  font-family: var(--acx-font-mono);
+  font-size: var(--acx-size-eyebrow);
+  font-weight: 400;
+  letter-spacing: var(--acx-tracking-eyebrow);
+  text-transform: uppercase;
+}
+
+.acx-label {
+  font-family: var(--acx-font-mono);
+  font-size: var(--acx-size-label);
+  font-weight: 400;
+  letter-spacing: var(--acx-tracking-label);
+  text-transform: uppercase;
+}
+
+.acx-footer {
+  font-family: var(--acx-font-mono);
+  font-size: var(--acx-size-footer);
+  font-weight: 400;
+  letter-spacing: var(--acx-tracking-footer);
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   Surfaces
+   ============================================================ */
+
+.acx-surface-light {
+  background: var(--acx-surface-light);
+  color: var(--acx-text-on-light);
+}
+
+.acx-surface-dark {
+  background: var(--acx-surface-dark);
+  color: var(--acx-text-on-dark);
+}
+
+.acx-surface-dark .acx-display,
+.acx-surface-dark .acx-heading {
+  color: var(--acx-text-on-dark-display);
+}
+
+/* The cover treatment: black canvas cut by an angled beam of light. */
+.acx-glow {
+  background-color: var(--acx-black);
+  background-image: var(--acx-gradient-glow);
+  color: var(--acx-text-on-dark-display);
+}
