@@ -1,0 +1,133 @@
+// ============================================================
+// Acxiom Design Tokens — SCSS
+// Source: AcxiomMasterTemplate_2026.pdf (v1.0, January 2026)
+// Companion to design-system/tokens/tokens.json
+// ============================================================
+
+// --- Core ---------------------------------------------------
+$acx-black: #000000;
+$acx-bone: #EDECE8;
+$acx-white: #FFFFFF;
+$acx-plum: #2A182E;
+
+// --- Accent (never for body text) ---------------------------
+$acx-magenta: #FF00A9;
+$acx-blue: #1A12F7;
+$acx-orange: #FF672D;
+
+// --- Neutral ------------------------------------------------
+$acx-grey: #C6C6C3;
+$acx-grey-dark: #A0A0A0;
+$acx-bone-shade: #D8D6D0;
+
+// --- Gradient stops -----------------------------------------
+$acx-cyan: #00E1FD;
+$acx-violet: #940BE0;
+
+// --- Semantic -----------------------------------------------
+$acx-surface-dark: $acx-black;
+$acx-surface-dark-alt: $acx-plum;
+$acx-surface-light: $acx-bone;
+$acx-surface-light-alt: $acx-white;
+
+$acx-text-on-light: $acx-black;
+$acx-text-on-light-muted: $acx-grey-dark;
+$acx-text-on-dark: $acx-white;
+$acx-text-on-dark-display: $acx-bone;
+
+// --- Chart series (in order) --------------------------------
+$acx-chart-series: ($acx-blue, $acx-magenta, $acx-plum, $acx-grey);
+
+// --- Gradients ----------------------------------------------
+$acx-gradient-glow: linear-gradient(75deg, #000000 0%, #2A182E 35%, #940BE0 70%, #FF00A9 100%);
+$acx-gradient-cyan-magenta: linear-gradient(180deg, #00E1FD 0%, #FF00A9 100%);
+$acx-gradient-magenta-violet: linear-gradient(180deg, #FF00A9 0%, #940BE0 100%);
+$acx-gradient-orange-violet: linear-gradient(180deg, #FF672D 0%, #940BE0 100%);
+
+// --- Type ---------------------------------------------------
+$acx-font-display: "Tw Cen MT", "Twentieth Century", Futura, "Century Gothic", Questrial, sans-serif;
+$acx-font-mono: Consolas, "Cascadia Mono", "SF Mono", Menlo, monospace;
+
+$acx-size-display: 72px;
+$acx-size-title: 32px;
+$acx-size-heading: 28px;
+$acx-size-lead: 16px;
+$acx-size-body: 14px;
+$acx-size-body-sm: 12px;
+$acx-size-caption: 10px;
+$acx-size-eyebrow: 11px;
+$acx-size-label: 8px;
+$acx-size-footer: 10px;
+
+$acx-tracking-none: 0em;
+$acx-tracking-caption: 0.05em;
+$acx-tracking-footer: 0.15em;
+$acx-tracking-eyebrow: 0.25em;
+$acx-tracking-label: 0.35em;
+
+$acx-leading-display: 1.05;
+$acx-leading-heading: 1.1;
+$acx-leading-body: 1.45;
+$acx-leading-lead: 1.5;
+
+// --- Layout -------------------------------------------------
+$acx-canvas-width: 960px;
+$acx-canvas-height: 540px;
+$acx-margin: 28.8px;
+$acx-headline-offset-top: 19.2px;
+$acx-footer-offset-bottom: 24px;
+
+// --- Space (4px base) ---------------------------------------
+$acx-space: (1: 4px, 2: 8px, 3: 12px, 4: 16px, 5: 24px, 6: 28.8px, 7: 32px, 8: 48px, 9: 64px);
+
+@function acx-space($step) {
+  @return map-get($acx-space, $step);
+}
+
+// --- Borders ------------------------------------------------
+$acx-border-hairline: 0.75px;
+$acx-border-default: 1px;
+$acx-border-thick: 2px;
+$acx-radius-none: 0;
+$acx-radius-pill: 999px;
+
+// ============================================================
+// Mixins
+// ============================================================
+
+// The signature kicker. Consolas is always uppercase.
+@mixin acx-eyebrow {
+  font-family: $acx-font-mono;
+  font-size: $acx-size-eyebrow;
+  font-weight: 400;
+  letter-spacing: $acx-tracking-eyebrow;
+  text-transform: uppercase;
+}
+
+@mixin acx-display {
+  font-family: $acx-font-display;
+  font-size: $acx-size-display;
+  font-weight: 400;
+  line-height: $acx-leading-display;
+}
+
+@mixin acx-heading {
+  font-family: $acx-font-display;
+  font-size: $acx-size-heading;
+  font-weight: 400;
+  line-height: $acx-leading-heading;
+}
+
+@mixin acx-body {
+  font-family: $acx-font-display;
+  font-size: $acx-size-body;
+  font-weight: 400;
+  line-height: $acx-leading-body;
+}
+
+// The cover treatment: black canvas cut by an angled beam of light.
+@mixin acx-glow {
+  background-color: $acx-black;
+  background-image: $acx-gradient-glow;
+  color: $acx-text-on-dark-display;
+}
